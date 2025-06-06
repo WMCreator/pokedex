@@ -1,0 +1,29 @@
+.pokemonTypes {
+  max-width: 50rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+
+  &__tag {
+    background-color: #ffde59;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #4d90fe;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    a {
+      text-transform: capitalize;
+      transition: color 0.2s ease-in-out;
+      color: black;
+    }
+  }
+}

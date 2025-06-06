@@ -1,0 +1,48 @@
+@use "@/styles/_objects/animations";
+@use "@/styles/_objects/page";
+@use "@/styles/_objects/skeleton";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-bungee);
+}
+
+body {
+  font-family: var(--font-fredoka);
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+button {
+  cursor: pointer;
+}
+
+dialog {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border: none;
+  display: grid;
+  place-items: center;
+
+  &:not([open]) {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+.pokemonList {
+  display: grid;
+
+  &__cards {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  &__controls {
+    justify-self: right;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    button {
+      aspect-ratio: 1/1;
+      padding: 0.5rem;
+      border-radius: 5rem;
+      background: none;
+      border: none;
+      display: grid;
+      place-items: center;
+
+      &:hover {
+        background-color: #e4e4e4;
+      }
+    }
+  }
+}
