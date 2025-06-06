@@ -1,0 +1,50 @@
+.progressStat {
+  p {
+    text-transform: capitalize;
+  }
+
+  &__bar {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__barOuter {
+    overflow: hidden;
+    border-radius: 1rem;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #ccc;
+  }
+
+  &__barInner {
+    display: block;
+    height: inherit;
+
+    &--hp {
+      background-color: #4caf50;
+    }
+
+    &--attack {
+      background-color: #f08030;
+    }
+
+    &--defense {
+      background-color: #6890f0;
+    }
+
+    &--special-attack {
+      background-color: #a040a0;
+    }
+
+    &--special-defense {
+      background-color: #7ac74c;
+    }
+
+    &--speed {
+      background-color: #f8d030;
+    }
+  }
+}
